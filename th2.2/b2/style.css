@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: url(https://i.pinimg.com/736x/6e/79/8f/6e798f3bc1397ab153c49ff6dab9606d.jpg) center/cover no-repeat;
+    height: 500px;
+    color: white;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    
+
+}
+.highlights{
+    background-color: #b2e0e0;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    width: 300px;
+}
+.card img{
+    width: 100%;
+}
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
