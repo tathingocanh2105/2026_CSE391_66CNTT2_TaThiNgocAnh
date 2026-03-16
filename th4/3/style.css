@@ -1,0 +1,48 @@
+body {
+    margin: 40px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.progress {
+    width: 300px;
+    height: 10px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+#progressBar {
+    height: 100%;
+    width: 33%;
+    background: green;
+    transition: 0.3s;
+}
+
+#summary {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#success {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}

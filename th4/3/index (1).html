@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>Đăng ký tài khoản</h2>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <form id="form">
+
+
+        <div class="step active">
+
+            <h3>Bước 1: Thông tin cá nhân</h3>
+
+            <label>Họ tên</label>
+            <input type="text" id="name">
+            <div class="error" id="nameError"></div>
+
+            <label>Ngày sinh</label>
+            <input type="date" id="dob">
+            <div class="error" id="dobError"></div>
+
+            <label>Giới tính</label>
+            <input type="radio" name="gender" value="Nam"> Nam
+            <input type="radio" name="gender" value="Nữ"> Nữ
+            <div class="error" id="genderError"></div>
+
+            <button type="button" id="next1">Tiếp theo</button>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>Bước 2: Thông tin tài khoản</h3>
+
+            <label>Email</label>
+            <input type="text" id="email">
+            <div class="error" id="emailError"></div>
+
+            <label>Mật khẩu</label>
+            <input type="password" id="password">
+            <div class="error" id="passwordError"></div>
+
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" id="confirmPassword">
+            <div class="error" id="confirmPasswordError"></div>
+
+            <button type="button" id="back1">Quay lại</button>
+            <button type="button" id="next2">Tiếp theo</button>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>Bước 3: Xác nhận</h3>
+
+            <div id="summary"></div>
+
+            <button type="button" id="back2">Quay lại</button>
+            <button type="submit">Hoàn tất</button>
+
+        </div>
+
+    </form>
+
+    <div id="success"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

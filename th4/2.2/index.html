@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b22.css">
+
+</head>
+
+<body>
+    <h2>Đặt hàng</h2>
+    <form id="orderForm">
+
+        <label>Sản phẩm</label>
+        <select id="product">
+            <option value="">-- Chọn sản phẩm --</option>
+            <option value="ao">Áo</option>
+            <option value="quan">Quần</option>
+            <option value="giay">Giày</option>
+        </select>
+        <div class="error" id="productError"></div>
+
+        <label>Số lượng</label>
+        <input type="number" id="quantity">
+        <div class="error" id="quantityError"></div>
+
+        <label>Ngày giao hàng</label>
+        <input type="date" id="deliveryDate">
+        <div class="error" id="dateError"></div>
+
+        <label>Địa chỉ giao</label>
+        <input type="text" id="address">
+        <div class="error" id="addressError"></div>
+
+        <label>Ghi chú</label>
+        <textarea id="note"></textarea>
+        <div id="noteCount">0/200</div>
+        <div class="error" id="noteError"></div>
+
+        <label>Thanh toán</label>
+        <input type="radio" name="payment" value="cod"> COD
+        <input type="radio" name="payment" value="bank"> Chuyển khoản
+        <input type="radio" name="payment" value="wallet"> Ví điện tử
+        <div class="error" id="paymentError"></div>
+
+        <h3>Tổng tiền: <span id="total">0</span> đ</h3>
+
+        <button type="submit">Đặt hàng</button>
+
+    </form>
+
+    <div id="confirmBox" style="display:none"></div>
+    <div id="success"></div>
+    <script src="b22.js"></script>
+
+</body>
+
+</html>

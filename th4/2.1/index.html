@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b21.css">
+</head>
+
+<body>
+    <form id="form">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name">
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <div class="error" id="emailError"></div>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone">
+        <div class="error" id="phoneError"></div>
+
+        <label>Mật khẩu</label>
+        <input type="password" id="password">
+        <div class="error" id="passwordError"></div>
+
+        <label>Xác nhận mật khẩu</label>
+        <input type="password" id="confirmPassword">
+        <div class="error" id="confirmPasswordError"></div>
+
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="nam">Nam
+        <input type="radio" name="gender" value="nu">Nữ
+        <div class="error" id="genderError"></div>
+        <br>
+        <label>
+            <input type="checkbox" id="terms">
+            Tôi đồng ý điều khoản
+        </label>
+        <div class="error" id="termsError"></div>
+        <br>
+        <button type="submit">Đăng ký</button>
+    </form>
+
+    <div id="successMessage" class="success"></div>
+
+    <script src="b21.js"></script>
+
+</body>
+
+</html>
